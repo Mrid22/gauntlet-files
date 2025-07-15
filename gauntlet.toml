@@ -24,5 +24,4 @@ read = [
 main_search_bar = ["read"]
 
 [permissions.exec]
-command = ["xdg-open"]
-command = ["open"]
+command = ["xdg-open", "open"]
