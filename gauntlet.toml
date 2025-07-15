@@ -1,7 +1,7 @@
 [gauntlet]
-name = 'Template Plugin'
+name = 'File Search'
 description = """
-Template Plugin Description
+Search Files
 """
 
 [[entrypoint]]
@@ -10,5 +10,12 @@ name = 'Template view'
 path = 'src/template-view.tsx'
 type = 'view'
 description = """
-Template Plugin Entrypoint Description
+List View
 """
+
+[permissions.filesystem]
+read = [
+  "{windows:user-home}"
+  "{linux:user-home}"
+  "{macos:user-home}"
+]
