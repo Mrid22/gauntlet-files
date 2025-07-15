@@ -15,8 +15,14 @@ List View
 
 [permissions.filesystem]
 read = [
-  "{windows:user-home}"
-  "{linux:user-home}"
-  "{macos:user-home}"
+  "{windows:user-home}",
+  "{linux:user-home}",
+  "{macos:user-home}",
 ]
 
+[permissions]
+main_search_bar = ["read"]
+
+[permissions.exec]
+command = ["xdg-open"]
+command = ["open"]
